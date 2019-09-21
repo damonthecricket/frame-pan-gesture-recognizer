@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="u0v-O3-vq7">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="b06-OG-POq">
+            <objects>
+                <viewController id="u0v-O3-vq7" customClass="MainViewController" customModule="FramePanGestureRecognizer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Alf-O9-R0h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i1f-RS-9bV" customClass="PolygonView" customModule="FramePanGestureRecognizer" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="i1f-RS-9bV" firstAttribute="leading" secondItem="NfU-iW-kEC" secondAttribute="leading" id="7gS-tW-6bT"/>
+                            <constraint firstItem="i1f-RS-9bV" firstAttribute="top" secondItem="NfU-iW-kEC" secondAttribute="top" id="8iT-4W-Pr5"/>
+                            <constraint firstItem="NfU-iW-kEC" firstAttribute="bottom" secondItem="i1f-RS-9bV" secondAttribute="bottom" id="Uh8-FZ-rDR"/>
+                            <constraint firstItem="NfU-iW-kEC" firstAttribute="trailing" secondItem="i1f-RS-9bV" secondAttribute="trailing" id="kyf-GE-grw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NfU-iW-kEC"/>
+                    </view>
+                    <connections>
+                        <outlet property="polygonView" destination="i1f-RS-9bV" id="75d-Ad-ojy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0WO-M4-FI3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35" y="50"/>
+        </scene>
+    </scenes>
+</document>
